@@ -3,6 +3,8 @@ coverage_pth.egg-info
 build
 dist
 env
+*.env
+.env
 docs/_build
 .DS_Store
 *.pyc
