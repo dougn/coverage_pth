@@ -1,0 +1,12 @@
+commit.txt
+coverage_pth.egg-info
+build
+dist
+env
+docs/_build
+.DS_Store
+*.pyc
+*.pyo
+*.egg
+.tox
+tests/*.output
