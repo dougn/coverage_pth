@@ -26,4 +26,7 @@ setup(
     ],
     #distclass=PureDistribution,
     zip_safe=False,
+    classifiers=[
+        'License :: OSI Approved :: BSD License',
+        ]
 )
