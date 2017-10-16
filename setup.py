@@ -1,5 +1,6 @@
 from setuptools import setup
 from distutils import sysconfig
+import sys
 import re
 #from setuptools.dist import Distribution
 
@@ -20,7 +21,7 @@ except Exception as exc:
 #class PureDistribution(Distribution):
 #    def is_pure(self):
 #        return True
-    
+
 setup(
     name = 'coverage_pth',
     version = '0.0.1',
