@@ -7,10 +7,10 @@ import re
 site_packages_path = sysconfig.get_python_lib()
 try:
     sprem = re.match(
-        r'.*(lib[\\/](python\d(\.\d)*[\\/])?site-packages)', site_packages_path, re.I)
+        r'.*(lib[\\/](python\d(\.\d+)*[\\/])?site-packages)', site_packages_path, re.I)
     if sprem is None:
         sprem = re.match(
-            r'.*(lib[\\/](python\d(\.\d)*[\\/])?dist-packages)', site_packages_path, re.I)
+            r'.*(lib[\\/](python\d(\.\d+)*[\\/])?dist-packages)', site_packages_path, re.I)
     rel_site_packages = sprem.group(1)
 except Exception as exc:
     print("I'm having trouble finding your site-packages directory.  Is it where you expect?")
